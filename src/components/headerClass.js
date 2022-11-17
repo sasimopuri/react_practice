@@ -11,7 +11,6 @@ class HeaderClass extends React.Component {
         counter:0
     }
 
-
     addcounter=()=>{
         let localcounter = this.state.counter;
         this.setState({
@@ -26,8 +25,6 @@ class HeaderClass extends React.Component {
         })
     }
 
-
-
     render(){
         {
             return(
@@ -35,11 +32,11 @@ class HeaderClass extends React.Component {
                 <h1>HELLO</h1>
                 <h1 className="heade">Heading external style</h1>
                 <h1>Adding class dynamically</h1>
-                <button  onClick={clicked}>Click me</button>
+                <button onClick={clicked}>Click me</button>
                 <hr></hr>
                 <button onClick={this.addcounter}>ADD</button>
-                <h1>Counter is {this.state.counter}</h1><button onClick={this.resetcounter}>Reset</button>
-                
+                <h1>Counter is {this.state.counter}</h1>
+                <button onClick={this.resetcounter}>Reset</button>
                 </React.Fragment>
             )
         }
