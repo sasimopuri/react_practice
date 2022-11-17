@@ -8,7 +8,7 @@ function clicked(event){
 class HeaderClass extends React.Component {
     
     state={
-        counter:1
+        counter:0
     }
 
 
@@ -18,6 +18,15 @@ class HeaderClass extends React.Component {
             counter:localcounter+1
         })
     }
+
+    resetcounter=()=>{
+        
+        this.setState({
+            counter:0
+        })
+    }
+
+
 
     render(){
         {
@@ -29,7 +38,8 @@ class HeaderClass extends React.Component {
                 <button  onClick={clicked}>Click me</button>
                 <hr></hr>
                 <button onClick={this.addcounter}>ADD</button>
-                <h1>Counter is {this.state.counter}</h1>
+                <h1>Counter is {this.state.counter}</h1><button onClick={this.resetcounter}>Reset</button>
+                
                 </React.Fragment>
             )
         }
