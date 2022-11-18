@@ -3,10 +3,12 @@ import Header from './header'
 import HeaderClass from './headerClass';
 
 
+
 function App(){
+    let nameis='sasi'
     return(
         <>
-        <HeaderClass />
+        <HeaderClass mynam={nameis}/>
         <Body />
         </>
     )
